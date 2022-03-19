@@ -1,0 +1,84 @@
+
+Set Postman
+Empresa
+
+{
+"nome":"Negocios Ltda",
+"cnpj":"77747287000142",
+"rua":"rua 110",
+"bairro":"recanto",
+"estado":"BA",
+"numero":"75"
+}
+
+Funcionario
+{
+"nome":"Rafael",
+"sobrenome":"Ferrari",    
+"cpf": "44463232880" ,
+"rua":"Beco Diagonal",
+"bairro":"Coperlotes",
+"cidade":"Paulinia",
+"numero":"743",
+"estado":"SP",
+"telefone":"19988885545",
+"dataNascimento":"1996-01-01",
+"dataContratacao":"2022-03-01",
+"sexo":"Masculino",
+"funcionarioEmpresa":{
+    "id":1
+}
+}
+
+Grao
+{
+"nome":"Feijao",
+"tempoColheita":45,
+"graoEmpresa":{
+      "id":1
+}
+}
+
+
+Fazenda
+
+{
+"nome":"Recanto do sul",    
+"quantidadeEstoque": 50 ,
+"rua":"rua Alameda",
+"bairro":"recanto",
+"estado":"SP",
+"numero":"88",
+"fazendaEmpresa":{
+    "id":1
+},
+"fazendaGrao":{
+    "id":1
+}
+}
+
+EndPoits
+1:http://localhost:8080/empresa
+
+2:http://localhost:8080/fazenda/empresa/idEmpresa
+
+3:http://localhost:8080/fazenda/count/idEmpresa
+
+4:http://localhost:8080/fazenda/proximaColheita/idFazenda
+
+5:http://localhost:8080/fazenda/colheita/idFazenda
+
+6:http://localhost:8080/fazenda/retirada/idFAzenda
+
+7:http://localhost:8080/grao/empresa/idEmpresa
+
+8:http://localhost:8080/grao/estoque/empresa/idEmpresa
+
+9:http://localhost:8080/funcionario/empresa/idEmpresa
+
+10:http://localhost:8080/grao/count/idEmpresa
+
+
+
+OBS:Subistitua os idEmpresa e idFazenda por numeros
+
