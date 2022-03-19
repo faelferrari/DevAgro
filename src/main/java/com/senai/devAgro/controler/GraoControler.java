@@ -20,7 +20,7 @@ public class GraoControler {
 
 
     @GetMapping
-    public List<GraoModel> graofindAll() {
+    public List<GraoDTO> graofindAll() {
         return graoService.findAll();
     }
 

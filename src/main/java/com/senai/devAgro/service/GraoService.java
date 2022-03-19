@@ -21,8 +21,14 @@ public class GraoService {
     @Autowired
     GraoRepository graoRepository;
 
-    public List<GraoModel> findAll() {
-        return graoRepository.findAll();
+    public List<GraoDTO> findAll() {
+        List<GraoDTO> dtos = new ArrayList<>();
+        List<GraoModel> models = this.graoRepository.findAll();
+        for (GraoModel model :models) {
+            dtos.add(new GraoDTO(model));
+        }
+        return dtos;
+       
     }
 
     public GraoModel addGrao(GraoModel graoModel) {
